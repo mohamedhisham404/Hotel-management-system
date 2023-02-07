@@ -1,6 +1,8 @@
 from tkinter import *
 from PIL import ImageTk, Image
 from customer import customer
+from room import roombooking
+from details import detailsRoom
 
 class HotelManagmentSystem:
     def __init__(self):
@@ -36,27 +38,29 @@ class HotelManagmentSystem:
 
         # ====================== btn frame ======================
         btn_frame=Frame(main_frame,bd=4,relief=RIDGE)
-        btn_frame.place(x=0,y=35,width=228,height=190)
+        btn_frame.place(x=0,y=35,width=228,height=115)
 
         cust_btn=Button(btn_frame,text="Customer",command=self.cust_details,width=22,font=("times new roman",14,"bold"),bg="black",fg="gold",bd=0,cursor="hand2")
         cust_btn.grid(row=0,column=0,pady=1)
 
-        room_btn=Button(btn_frame,text="Room",width=22,font=("times new roman",14,"bold"),bg="black",fg="gold",bd=0,cursor="hand2")
+        room_btn=Button(btn_frame,text="Book Room",command=self.roombooking,width=22,font=("times new roman",14,"bold"),bg="black",fg="gold",bd=0,cursor="hand2")
         room_btn.grid(row=1,column=0,pady=1)
 
-        detailes_btn=Button(btn_frame,text="Detailes",width=22,font=("times new roman",14,"bold"),bg="black",fg="gold",bd=0,cursor="hand2")
+        detailes_btn=Button(btn_frame,text="Room Detailes",command=self.detailsRoom,width=22,font=("times new roman",14,"bold"),bg="black",fg="gold",bd=0,cursor="hand2")
         detailes_btn.grid(row=2,column=0,pady=1) 
-
-        report_btn=Button(btn_frame,text="Report",width=22,font=("times new roman",14,"bold"),bg="black",fg="gold",bd=0,cursor="hand2")
-        report_btn.grid(row=3,column=0,pady=1)        
-
-        logout_btn=Button(btn_frame,text="Logout",width=22,font=("times new roman",14,"bold"),bg="black",fg="gold",bd=0,cursor="hand2")
-        logout_btn.grid(row=4,column=0,pady=1)   
-
+        
 
     def cust_details(self):
         self.new_window=Toplevel(root)
         self.app=customer(self.new_window)
+
+    def roombooking(self):
+        self.new_window=Toplevel(root)
+        self.app=roombooking(self.new_window)
+
+    def detailsRoom(self):
+        self.new_window=Toplevel(root)
+        self.app=detailsRoom(self.new_window)        
 
 
 if __name__=="__main__":
