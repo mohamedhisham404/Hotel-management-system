@@ -1,6 +1,6 @@
 # Hotel Management System Desktop App
 
-Welcome to the Hotel Management System Desktop App project! This application is built using Python's Tkinter library for the GUI and MySQL database for data storage. It aims to streamline various tasks involved in managing a hotel, including reservations, guest management, room allocation, billing, and more.
+Welcome to the Hotel Management System Desktop App project! This application is built using Python's Tkinter library for the GUI and SQLite database for data storage. It aims to streamline various tasks involved in managing a hotel, including reservations, guest management, room allocation, billing, and more.
 
 ## Features
 
