@@ -39,5 +39,11 @@ Welcome to the Hotel Management System Desktop App project! This application is 
 
 ## Screenshots from the App
 
-![alt text](https://drive.google.com/file/d/1GF7003DaKDL40mUC01TNGwEYj3xNUfpi/view?usp=sharing)
 
+![Screenshot1](https://github.com/mohamedhisham404/Hotel-management-system/assets/37938481/2849f16a-dd9a-4774-ba20-235100f24d6f)
+
+![Screenshot2](https://github.com/mohamedhisham404/Hotel-management-system/assets/37938481/b2185c70-e757-432d-b736-521b7d223a0a)
+
+![Screenshot3](https://github.com/mohamedhisham404/Hotel-management-system/assets/37938481/79038f6f-c030-41e2-8786-387421272537)
+
+![Screenshot4](https://github.com/mohamedhisham404/Hotel-management-system/assets/37938481/ee5ee8e0-6be0-42a5-bfa8-25ea4054846f)
