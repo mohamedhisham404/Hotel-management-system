@@ -11,15 +11,15 @@ class HotelManagmentSystem:
         root.geometry("1550x880+0+0")
         
         # ====================== logo ======================
-        logo=Image.open("logo.png")
-        logo=logo.resize((230,140),Image.ANTIALIAS)
+        logo=Image.open("assets/logo.png")
+        logo=logo.resize((230,140),Image.LANCZOS)
         self.photologo=ImageTk.PhotoImage(logo)
 
         lbl_title=Label(image=self.photologo,bd=4,relief=RIDGE)
         lbl_title.place(x=0,y=0,width=230,height=140) 
         # ====================== 1st image ======================
-        img1=Image.open("hotel.jpg")
-        img1=img1.resize((1550,140),Image.ANTIALIAS)
+        img1=Image.open("assets/hotel.jpg")
+        img1=img1.resize((1550,140),Image.LANCZOS)
         self.photoimg1=ImageTk.PhotoImage(img1)
 
         lbl_title=Label(image=self.photoimg1,bd=4,relief=RIDGE)
